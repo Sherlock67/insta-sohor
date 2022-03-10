@@ -16,7 +16,7 @@ const isLiked = (id) => {
 };
 
 const addToLiked = (id) => {
-    likedPostsId.includes(id); 
+    likedPostsId.plus(id); 
     showPosts(posts);
 };
 
@@ -96,8 +96,7 @@ const createPost = (post) => {
 
                   <div class="post__indicators"></div>
 
-                  <button class="post__button post__button--align-right" onclick="reportPost(${
-                      post.id
+                  <button class="post__button post__button--align-right" onclick="reportPost(${post.id
                   })">
                     <i class="fa-solid fa-ban"></i>
                   </button>
@@ -153,7 +152,7 @@ const displayLikedPosts = () => {
 
 const displayReportedPosts = () => {
     const reportedPosts = getReportedPosts();
-    posts.forEach((post) => {
+    reportedPosts.forEach((post) => {
         const div = createPost(post);
         document.getElementById( "reported" ).appendChild(div);
     });
