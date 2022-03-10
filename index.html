@@ -77,9 +77,40 @@
             <div id="reported">
                 <h1>Reported posts</h1>
             </div>
+            <section class="mt-5" id="question">
+                <div class="container">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                              What does Javascript Event Loop do?
+                            </button>
+                          </h2>
+                          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p>Javascript is synchronus programming language which means it always goes sequentially but with a trick it acheive its asynchronus behaviours.All his operations are stored in a call stack when excution is complete callstack pops them and event queue helps to send new work method for processing in the callstack.So we need to always check out which one is empty or full.This checking this is done by the help of Event Loop.It always checks the callstack whether it is empty or not.Thus Javascript acheive the asynchronus property.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                             What is the Difference Between Local Storage and Session Storage?
+                            </button>
+                          </h2>
+                          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                              <p>Local Storage is a type of storage where we can save data in local storage for unlimited time.Even if we close the browser the data will be there.
+                                 But in Session Storage we dont have this type of facility.When we close the browser or the tab the data for the particular session got removed.It will create new session data when we open a new tab or new window.     
+                            </p>
+                            </div>
+                          </div>
+                        </div>
+                </div>
+            </section>
         </main>
         <footer></footer>
-
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
         <!-- add javascript  file  -->
         <script src="./js/app.js"></script>
     </body>
